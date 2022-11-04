@@ -195,7 +195,7 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      <h1>作業 01</h1>
+      <h1>作業 05</h1>
     </div>
   </div>
 
@@ -203,13 +203,14 @@
   <div class="row hw12">
     <div class="col-md-12 twenty">
       作業程式碼，請放在 src 檔案夾。
+      <input type="button" name="back" onclick="parent.location='./src/index.html'" value="...按我...按我...按我...">
     </div>
   </div>
 
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。
+      <p>透過這次的作業，我學會了要如何將 tfjs-models 所偵測出來的臉部節點與模型角色對接。透過抓取臉部上 478 個節點位置，透過簡單地計算後，將位移的值設定到模型對應的參數上，如此便能夠使用鏡頭來控制模型的移動。</p>
     </div>
   </div>
 
@@ -223,41 +224,41 @@
           <th>配分</th>
           <th>分項描述</th>
         </tr>
-        <tr>
+       <tr>
           <td rowspan="7" id="myTotal"></td>
           <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
-          <td id='m1'>1</td>
-          <td>描述</td>
+          <td id='m1'>0</td>
+          <td>Face-Landmarks-Detection 與 Cubism 呈現於網頁上</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
           <td id='m2'>1</td>
-          <td>描述</td>
+          <td>Cubism角色眉毛對接</td>
         </tr>
         <tr>
           <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
-          <td id='m3'>1</td>
-          <td>描述</td>
+          <td id='m3'>2</td>
+          <td>Cubism角色左右擺頭</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
-          <td id='m4'>1</td>
-          <td>描述</td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4"></td>
+          <td id='m4'>2</td>
+          <td>Cubism角色上下點頭</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox5" checked="checked" ></td>
-          <td id='m5'>2</td>
-          <td>描述</td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox5"></td>
+          <td id='m5'>1</td>
+          <td>Cubism角色眼睛開闔</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox6" checked="checked" /></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox6"></td>
           <td id='m6'>2</td>
-          <td>描述</td>
+          <td>Cubism角色歪頭</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox7" checked="checked" /></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox7"></td>
           <td id='m7'>2</td>
-          <td>描述</td>
+          <td>Cubism角色嘴巴開闔</td>
         </tr>
       </table>
     </div>
@@ -265,10 +266,10 @@
 
   <!-- ------------------------------------------------>
   <div class="row hw12">
-    <div class="col-md-12 twenty">
-      <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
+    <div class="col-md-12 twenty d-flex justify-content-center">
+        <video id="video1" style="width:100%;max-width:100%;height:600px" controls="">
+            <source src="demo.mp4" type="video/mp4">
+        </video>
     </div>
   </div>
 
