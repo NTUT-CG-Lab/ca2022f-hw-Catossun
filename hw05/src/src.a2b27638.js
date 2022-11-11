@@ -97425,6 +97425,7 @@ class Camera {
       view.angleY = (faces[0].keypoints[168].y-250)/100*30*(-1);
 
       /*歪頭*/
+      view.angleZ = ( (faces[0].keypoints[152].x - faces[0].keypoints[10].x) / 5 );
 
       /*眼睛控制*/
       if((faces[0].keypoints[145].y)-(faces[0].keypoints[159].y) < 5){
@@ -97441,7 +97442,12 @@ class Camera {
       }
 
       /*嘴巴控制*/
-
+      if((faces[0].keypoints[15].y)-(faces[0].keypoints[12].y) > 20){
+        view.mouthOpenY = 1; //開嘴
+      }
+      else{
+        view.mouthOpenY = 0; //閉嘴
+      }
     });
   }
 }
